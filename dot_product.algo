@@ -1,0 +1,23 @@
+
+PROCEDURE Dot_product
+
+VAR
+ar1: INTEGER [2];
+ar2: INTEGER[2];
+el :=0: INTEGER;
+i: INTEGER;
+j: INTEGER;
+
+BEGIN
+read (ar1);
+read(ar2);
+
+for i from 0 to ar1.length-1 step 1 do 
+for j from 0 to ar2.length-1 step 1 do  
+el:= el + ar1[i]*ar2[j]
+END for
+END for
+if el:=0 then
+write "les deux vecteurs sont orthogonaux"
+else "les deux vecteurs ne sont pas orthogonaux"
+END
